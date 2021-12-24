@@ -3,97 +3,187 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
+    <title> E-commerce </title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">E-commerce</div>
+            <i class='bx bx-menu' id="btn"></i>
         </div>
-    </nav>
-
-    <main class="container">
-
-        <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Album example</h1>
-                    <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                        creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
-                        entirely.</p>
-                    <p>
-                        <a href="/send.html" class="btn btn-primary my-2">Main call to action</a>
-                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                    </p>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cart-add'></i>
+                    <span class="links_name">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-id-card'></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-mail-send'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="./img/profilepic.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name"><a href="#">Admin Login</a></div>
+                    </div>
+                </div>
+                <a href="#"><i class='bx bxs-user-circle' id="admin_ico"></i></a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="text">E-Commerce / Home</div>
+        <div class="content">
+            <div class="head-main-con">
+                <div class="txt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam velit quasi illo recusandae ab
+                        asperiores, quis necessitatibus fugit qui incidunt omnis accusantium provident. Corrupti
+                        reiciendis quisquam libero amet dicta ea provident cum, nemo vitae dolore, debitis explicabo
+                        dolor modi dolorum laudantium beatae doloremque totam, fuga non eum quidem? Quae repellat aut
+                        quaerat cumque at temporibus molestias sit repudiandae, sapiente similique. Accusantium
+                        excepturi vel dolores voluptas corporis sit delectus nemo! Sed aliquid adipisci asperiores
+                        explicabo odio error voluptatibus a iure dolores.</p>
+                    <button><a href="./products.html">All Products</a></button>
+                    <button><a href="#">Contact</a></button>
+                </div>
+                <div class="img">
+                    <img src="./img/Salesman-and-Customer.jpg" alt="">
                 </div>
             </div>
-        </section>
 
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="itemsDiv"></div>
+            <div class="hr">
+                <hr />
+            </div>
+
+            <div class="top-pro">
+                <h2>Top Products</h2>
+                <div class="pro-row" id="itemsDiv">
+                    <!-- <div class="card">
+                        <div class="img"><img src="./img/Salesman-and-Customer.jpg" alt=""></div>
+                        <div class="con">
+                            <h3 id="name">Test Pro</h3>
+                            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique
+                                soluta, ducimus placeat asperiores dolore? Facilis delectus eaque magni tempore.</p>
+                            <div class="oth">
+                                <button id="cat" disabled>Category</button> <button id="price" disabled>₹20000</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="./img/Salesman-and-Customer.jpg" alt=""></div>
+                        <div class="con">
+                            <h3 id="name">Test Pro</h3>
+                            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique
+                                soluta, ducimus placeat asperiores dolore? Facilis delectus eaque magni tempore.</p>
+                            <div class="oth">
+                                <button id="cat" disabled>Category</button> <button id="price" disabled>₹20000</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="./img/Salesman-and-Customer.jpg" alt=""></div>
+                        <div class="con">
+                            <h3 id="name">Test Pro</h3>
+                            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique
+                                soluta, ducimus placeat asperiores dolore? Facilis delectus eaque magni tempore.</p>
+                            <div class="oth">
+                                <button id="cat" disabled>Category</button> <button id="price" disabled>₹20000</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="./img/Salesman-and-Customer.jpg" alt=""></div>
+                        <div class="con">
+                            <h3 id="name">Test Pro</h3>
+                            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique
+                                soluta, ducimus placeat asperiores dolore? Facilis delectus eaque magni tempore.</p>
+                            <div class="oth">
+                                <button id="cat" disabled>Category</button> <button id="price" disabled>₹20000</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </div>
-    </main>
 
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                    href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">getting started guide</a>.
-            </p>
-        </div>
-    </footer>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>E<span>Commerce</span></h3>
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Services</a>
+                    ·
+                    <a href="#">Contact</a>
+                    ·
+                    <a href="#">Enquiry</a>
+                </p>
+                <p class="footer-company-name">E-commerce &copy; 2021</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Hacker Street</span> Bihar, India</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:">contact@ecommerce.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam vitae ea eveniet magni quia.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bx-mail-send'></i></a>
+                    <a href="#"><i class='bx bxs-phone-call'></i></a>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </section>
 
 
     <!-- Firebase CDN  -->
@@ -101,17 +191,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 
     <!-- Custom JavaScript -->
+    <script src="./JS/script.js"></script>
     <script src="./JS/config.js"></script>
     <script src="./JS/Get.js"></script>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>
